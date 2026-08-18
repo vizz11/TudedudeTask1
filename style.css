@@ -1,49 +1,38 @@
 body{
-  padding: 25px;
-  background-color: #c9a60d;
-}
-.head {
-	color: #4459db;
-}
-#bglime
-{
-  background-color: lime;
-}
-h2 span{
-  color: red;
-  font-size: xx-large;
-}
-p
-{
-  color: white;
-}
-p span
-{
-  color: black;
-  font-size: x-large;
-}
-#para
-{
-  color: green;
-}
-ol li {
-  color: rgb(92, 35, 35);
-}
-a[href="https://google.com"]{
-  color:blue;
-  background-color: blueviolet;
 
+ margin: 0;
+  padding: 0;
 }
-#blist
+*{
+ 
+  box-sizing: border-box;
+}
+.title {
+	color: #5C6AC4;
+}
+.main
 {
-  color:blue;
+  width:50vw;
+  height: 50vh;
+  margin: 10% 25% 10% 25%;
 }
-#redlist
-{
-color:red;
-}
-a[href="https://tutedude.com"]{
-  color:rgb(32, 32, 136);
-  background-color: yellow;
+.pix{
+  border: #5C6AC4 solid 5px;
+  width: 450px;
+  padding: 10px;
+  height: 300px;
+  }
+  a{
+  color:white;
+  text-decoration:none;
+  }
+.grd {
+  width:450px;
+  height: 50px;
+ display: grid;
+  place-items: center;
+  color:white;
+  border: #5C6AC4 solid 1px;
 
+ background: linear-gradient(to right,orange,purple, lawngreen);
 }
