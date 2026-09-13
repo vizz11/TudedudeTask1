@@ -1,38 +1,95 @@
-body{
-
- margin: 0;
-  padding: 0;
-}
-*{
- 
-  box-sizing: border-box;
-}
-.title {
-	color: #5C6AC4;
-}
-.main
+body
 {
-  width:50vw;
-  height: 50vh;
-  margin: 10% 25% 10% 25%;
-}
-.pix{
-  border: #5C6AC4 solid 5px;
-  width: 450px;
-  padding: 10px;
-  height: 300px;
-  }
-  a{
-  color:white;
-  text-decoration:none;
-  }
-.grd {
-  width:450px;
-  height: 50px;
- display: grid;
-  place-items: center;
-  color:white;
-  border: #5C6AC4 solid 1px;
+  padding: 0px;
+  margin: 0px;
 
- background: linear-gradient(to right,orange,purple, lawngreen);
+}
+.navbar {
+  width: 100%;
+  background-color: teal;
+  overflow: auto;
+}
+
+.logo {
+  float: left;
+  color: white;
+  padding: 14px 20px;
+  font-weight: bold;
+}
+
+.right-group {
+  float:inherit;
+  text-align:justify;
+}
+.leftside
+{
+  width: 30%;
+  margin-left: 20%;
+  float: left;
+  clear: both;
+
+}
+.rightside{
+  width:40;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.menu li {
+  float: left;
+}
+
+.title {
+  color: #5C6AC4;
+}
+.menu li a {
+  display: block;
+  color: white;
+  text-align: start;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  display: block;
+  color: black;
+  border-radius: 0px 0px 5px 5px;
+  text-align: start;
+ background-image: linear-gradient(to bottom,orange,  darkorange);
+  padding: 25px 16px;
+  transition: width 0.5s;
+  text-decoration: none;
+}
+
+.username {
+  float: right;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 10px;
+  color: yellow;
+  background-image: linear-gradient(to bottom,skyblue,  deepskyblue);
+}
+.username:hover {
+  display: block;
+  color: black;
+  border-radius: 5px 5px 5px 5px;
+  text-align: start;
+ background-image: linear-gradient(to bottom,orange,  darkorange);
+  padding: 10px 10px;
+  transition: width 0.5s;
+  text-decoration: none;
+}
+
+
+
+.navbar::after {
+  
+  color: white;
+  clear: both;
+  display: table;
 }
