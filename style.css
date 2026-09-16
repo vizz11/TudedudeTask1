@@ -1,95 +1,52 @@
-body
+*
 {
-  padding: 0px;
-  margin: 0px;
-
+box-sizing: border-box;
 }
-.navbar {
-  width: 100%;
-  background-color: teal;
-  overflow: auto;
+body{
+	margin: 0;
+	padding: 0;
 }
-
-.logo {
-  float: left;
-  color: white;
-  padding: 14px 20px;
-  font-weight: bold;
-}
-
-.right-group {
-  float:inherit;
-  text-align:justify;
-}
+.container{
+	display: flex;
+height: 100vh;
+   }
 .leftside
 {
-  width: 30%;
-  margin-left: 20%;
-  float: left;
-  clear: both;
+	flex-basis:60% ;
+}
+.rightside
+{
+	justify-items: center;
+	background-color: lightblue;
+	align-self:stretch;
+flex-basis: 40%;
+align-content: center;
+align-items: center;
+row-gap: 20px;
 
 }
-.rightside{
-  width:40;
+.lgbtn
+{
+	height: 40px;
+	border: 0;
+	margin-top: 20px;
+	background-color: deepskyblue;
+	width:20rem;
+	color: white;
+	border-radius: 8px;
 }
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
+input
+{
+	border:1px black solid;
+	opacity: 0.7;
+	padding: 20px;
+	border-radius: 5px;
+	width: 20rem;
 
-.menu li {
-  float: left;
 }
-
-.title {
-  color: #5C6AC4;
-}
-.menu li a {
-  display: block;
-  color: white;
-  text-align: start;
-  padding: 25px 16px;
-  text-decoration: none;
-}
-
-.menu li a:hover {
-  display: block;
-  color: black;
-  border-radius: 0px 0px 5px 5px;
-  text-align: start;
- background-image: linear-gradient(to bottom,orange,  darkorange);
-  padding: 25px 16px;
-  transition: width 0.5s;
-  text-decoration: none;
-}
-
-.username {
-  float: right;
-  color: white;
-  padding: 10px 10px;
-  border-radius: 5px 5px 5px 5px;
-  margin: 10px;
-  color: yellow;
-  background-image: linear-gradient(to bottom,skyblue,  deepskyblue);
-}
-.username:hover {
-  display: block;
-  color: black;
-  border-radius: 5px 5px 5px 5px;
-  text-align: start;
- background-image: linear-gradient(to bottom,orange,  darkorange);
-  padding: 10px 10px;
-  transition: width 0.5s;
-  text-decoration: none;
-}
-
-
-
-.navbar::after {
-  
-  color: white;
-  clear: both;
-  display: table;
+input:focus
+{
+	border:1px grey solid;
+	outline: none;
+	border-radius: 5px;
 }
