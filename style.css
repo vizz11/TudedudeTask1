@@ -145,7 +145,7 @@
   padding: 0.375rem 0.75rem;
   font-size: 12;
   border-radius: 0.375rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
 }
 .blubtn:hover
 {
@@ -229,28 +229,21 @@
 
 .blubtn
 {
-  margin-top: 10px;
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  user-select: none;
-  background-color: #0d6efd;
-  border: 1px solid #0d6efd;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.375rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  /* Smooth ease-in-out animation on transform */
+  transition: transform 0.5s ease-in-out;
+ 
 }
 .blubtn:hover
 {
-  color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  transform: rotate(-10deg) scale(1.2);
 }
 .hamburger-btn {
     display: none;
@@ -379,4 +372,8 @@
   height: 70px;
 
 }
+
+
+
+
 }
