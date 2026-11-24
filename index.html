@@ -8,22 +8,30 @@
   <body>
 <div class="navbar">
   <a href="#" class="logo"><img  class="logoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxKafbueyGZXuNN9RnoNVkSRovsOSd8hS26KUh-2cBxw&s=10" width="100" height="100"></a>
+    <button class="hamburger-btn" id="menuBtn" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-  <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+  
+    <ul class="menu-list" id="menuList">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+<!-- 
+  <script>
+   const hamburgerBtn = document.querySelector('.hamburger-btn');
 
-
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
-
-  <label for="menu-toggle" class="hamburger" aria-label="Toggle Menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+hamburgerBtn.addEventListener('mousedown', (e) => {
+  if (document.activeElement === hamburgerBtn) {
+    e.preventDefault(); // Prevents default click behavior from re-focusing the button
+    hamburgerBtn.blur(); // Removes focus, which hides the menu
+  }
+});
+  </script> -->
 
   <!-- Username -->
   <div class="username">Username</div>
@@ -40,5 +48,6 @@
     <img class="largimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo52OzpsyLGhjF_frMym7tzSXBa_YTycI-Bt5gh8D_HottaQ-cD9dwfpo&s=10" >
   </span>
 </div>
+
   </body>
 </html>
