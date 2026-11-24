@@ -258,11 +258,34 @@
 } 
 .largimg
 {
-  width: 500px;
+  width: 400px;
  
-  heigh:500px;
-}
+  heigh:400px;
 
+    border-radius: 10%;
+    /* Total loop duration: 4 seconds */
+    animation: orbitAndSqueeze 1.5s ease-in-out infinite;
+
+}
+@keyframes orbitAndSqueeze {
+  /* 0% to 70%: Complete 1 full orbit (360deg) */
+  0% {
+    transform: rotate(0deg) translateX(20px) rotate(0deg) scale(1, 1);
+  }
+  70% {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg) scale(1, 1);
+  }
+
+  /* 70% to 85%: Squeeze at the original starting position */
+  85% {
+    transform: rotate(360deg) translatex(20px) rotate(-360deg) scale(1.0, 0.9);
+  }
+
+  /* 85% to 100%: Bounce back to normal shape before the loop restarts */
+  100% {
+    transform: rotate(360deg) translatex(20px) rotate(-360deg) scale(1, 1);
+  }
+}
   .logo {
     flex:0;
   justify-self: start;
